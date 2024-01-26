@@ -31,53 +31,58 @@ public class Produto {
         this.setCategoria(categoria);
     }
 
-
     public Long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public Produto setId(Long id) {
         this.id = id;
+        return this;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public Produto setNome(String nome) {
         this.nome = nome;
+        return this;
     }
 
     public String getDescricao() {
         return descricao;
     }
 
-    public void setDescricao(String descricao) {
+    public Produto setDescricao(String descricao) {
         this.descricao = descricao;
+        return this;
     }
 
     public BigDecimal getPreco() {
         return preco;
     }
 
-    public void setPreco(BigDecimal preco) {
+    public Produto setPreco(BigDecimal preco) {
         this.preco = preco;
+        return this;
     }
 
     public LocalDateTime getData() {
         return data;
     }
 
-    public void setData(LocalDateTime data) {
+    public Produto setData(LocalDateTime data) {
         this.data = data;
+        return this;
     }
 
     public Categoria getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(Categoria categoria) {
+    public Produto setCategoria(Categoria categoria) {
         this.categoria = categoria;
+        return this;
     }
 
     @Override
