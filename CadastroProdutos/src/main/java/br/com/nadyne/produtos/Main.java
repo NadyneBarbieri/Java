@@ -7,9 +7,7 @@ import br.com.nadyne.produtos.model.repositorio.ColecaoProdutoRepositorio;
 import br.com.nadyne.produtos.view.CategoriaView;
 import br.com.nadyne.produtos.view.Opcao;
 import br.com.nadyne.produtos.view.OpcaoView;
-
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import br.com.nadyne.produtos.view.ProdutoView;
 
 import static br.com.nadyne.produtos.view.CategoriaView.form;
 
@@ -53,13 +51,16 @@ public class Main {
 
     public static void cadastrarCategoria() {
         CategoriaView view = new CategoriaView();
-        Categoria categoria = form();
+        Categoria categoria = form(new Categoria());
         ColecaoCategoriaRepositorio.save(categoria);
+        CategoriaView Categoriaview;
         view.sucesso(categoria);
     }
 
     private static void cadastrarProduto(){
-
+        Produto produto = ProdutoView.form(new Produto());
+        ColecaoProdutoRepositorio.save(produto);
+        ProdutoView.sucesso(produto);
     }
 
     private static void alterarProduto(){

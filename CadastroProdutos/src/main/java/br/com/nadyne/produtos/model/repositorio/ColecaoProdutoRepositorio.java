@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.Vector;
 
@@ -55,7 +56,7 @@ public class ColecaoProdutoRepositorio {
                 .toList();
     }
 
-    public static List<Produto> filAll(){
-        return null;
+    public static List<Produto> findAll() {
+        return produtos;
     }
 }

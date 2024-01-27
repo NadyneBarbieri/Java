@@ -29,7 +29,7 @@ public class CategoriaView {
         JOptionPane.showMessageDialog(null, "Categoria " + categoria.getNome().toUpperCase() + " salva com sucesso!");
     }
 
-    public static Categoria form() {
+    public static Categoria form(Categoria categoria) {
         String nome = JOptionPane.showInputDialog("Informe o nome da Categoria");
         return new Categoria(nome);
     }
