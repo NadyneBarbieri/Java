@@ -9,6 +9,9 @@ import br.com.nadyne.produtos.view.Opcao;
 import br.com.nadyne.produtos.view.OpcaoView;
 import br.com.nadyne.produtos.view.ProdutoView;
 
+import javax.swing.*;
+import java.util.List;
+
 import static br.com.nadyne.produtos.view.CategoriaView.form;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -24,7 +27,7 @@ public class Main {
                 case cadastrarCATEGORIA ->  cadastrarCategoria();
                 case cadastrarPRODUTO -> cadastrarProduto();
                 case alterarPRODUTO -> alterarProduto();
-                case consultarPRODUTOID -> consultarProduto();
+                case consultarPRODUTOID -> consultarProdutoPorID();
                 case consultarPRODUTOPORCATEGORIA -> consultarProdutoPorCategoria();
                 case encerrarSISTEMA -> encerrarSistema();
             }
@@ -49,6 +52,29 @@ public class Main {
 //       System.out.println("ID:" + produto1.getId() + "Nome do produto: " + produto1.getNome());
     }
 
+    private static void consultarProdutoPorID() {
+        Long id = 0l;
+        do {
+            try {
+                id = Long.parseLong(JOptionPane.showInputDialog("Informe o id do produto"));
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "Id inválido!");
+            }
+        } while (id <= 0);
+
+        Produto p = ColecaoProdutoRepositorio.findById(id);
+        if (p != null) {
+            ProdutoView.show(p);
+        } else {
+            JOptionPane.showMessageDialog(null, "Produto não encontrado!");
+        }
+    }
+
+    private static void alterarProduto() {
+        Produto produto = ProdutoView.select();
+        ProdutoView.update(produto);
+    }
+
     public static void cadastrarCategoria() {
         CategoriaView view = new CategoriaView();
         Categoria categoria = form(new Categoria());
@@ -63,15 +89,20 @@ public class Main {
         ProdutoView.sucesso(produto);
     }
 
-    private static void alterarProduto(){
-
+    private static void alterarproduto() {
+        Produto produto = ProdutoView.select();
+        ProdutoView.update(produto);
     }
-
-    private static void consultarProduto(){
-
-    }
-
     private static void consultarProdutoPorCategoria(){
+        Categoria categoria = CategoriaView.select(null);
+        List<Produto> produtos = ColecaoProdutoRepositorio.findByIdCategoria(categoria);
+
+        if(produtos.isEmpty()){
+            JOptionPane.showMessageDialog(null, "Não encontramos produtos com a categoria" + categoria.getNome());
+        }else{
+            produtos.forEach(ProdutoView::show);
+            produtos.forEach(System.out::println);
+        }
 
     }
 

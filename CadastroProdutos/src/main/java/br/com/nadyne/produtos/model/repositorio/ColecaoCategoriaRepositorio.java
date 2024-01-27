@@ -1,8 +1,8 @@
 package br.com.nadyne.produtos.model.repositorio;
 
 import br.com.nadyne.produtos.model.Categoria;
+import br.com.nadyne.produtos.model.Produto;
 
-import javax.swing.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
@@ -54,4 +54,5 @@ public class ColecaoCategoriaRepositorio {
             return null;
         }
     }
+
 }

@@ -59,4 +59,9 @@ public class ColecaoProdutoRepositorio {
     public static List<Produto> findAll() {
         return produtos;
     }
+
+    public static List<Produto> findByIdCategoria(Categoria categoria) {
+        return produtos.stream().filter(p->p.getCategoria().equals(categoria)).toList();
+
+    }
 }
