@@ -3,6 +3,7 @@ package br.com.nadyne.produtos.view;
 import br.com.nadyne.produtos.model.Categoria;
 import br.com.nadyne.produtos.model.Produto;
 import br.com.nadyne.produtos.model.repositorio.ColecaoCategoriaRepositorio;
+import br.com.nadyne.produtos.model.repositorio.ColecaoProdutoRepositorio;
 
 import javax.swing.*;
 import java.math.BigDecimal;
@@ -19,7 +20,7 @@ public class ProdutoView {
                 "Menu",
                 JOptionPane.QUESTION_MESSAGE,
                 null, // icone
-                ColecaoCategoriaRepositorio.findAll().toArray(), // Número da opção
+                ColecaoProdutoRepositorio.findAll().toArray(), // Número da opção
                 1);
 
         return ret;
