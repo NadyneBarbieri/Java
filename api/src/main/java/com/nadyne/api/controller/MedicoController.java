@@ -1,10 +1,6 @@
 package com.nadyne.api.controller;
 
-import com.nadyne.api.medico.DadosCadastroMedico;
-import com.nadyne.api.medico.DadosListagemMedico;
-import com.nadyne.api.medico.Medico;
-import com.nadyne.api.medico.MedicoRepository;
-import com.nadyne.api.paciente.DadosListagemPaciente;
+import com.nadyne.api.medico.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +23,26 @@ public class MedicoController {
     }
     @GetMapping                          //ordena como os dados virao no metodo get
     public Page<DadosListagemMedico> listar(@PageableDefault(size = 10, sort={"nome"}) Pageable paginacao){
-        return repository.findAll(paginacao).map(DadosListagemMedico::new);
+        return repository.findAllByAtivoTrue(paginacao).map(DadosListagemMedico::new);
+    }
+    @PutMapping
+    @Transactional
+    public void atualizar(@RequestBody @Valid DadosaAtualizacaoMedico dados){
+        var medico = repository.getReferenceById(dados.id());
+        medico.atualizarInformacoes(dados);
+    }
+//    @DeleteMapping("/{id}")
+//    @Transactional
+//    public void excluir(@PathVariable Long id){
+//        repository.deleteById(id);
+//    }
+
+    // Exclusao logica:
+    @DeleteMapping("/{id}")
+    @Transactional
+    public void excluir(@PathVariable Long id){
+        var medico = repository.getReferenceById(id);
+        medico.excluir();
     }
 
 }

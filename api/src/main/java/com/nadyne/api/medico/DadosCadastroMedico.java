@@ -9,6 +9,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
 public record DadosCadastroMedico(
+
         @NotBlank // para verificar se o camo esta vindo vazio ou null.
         String nome,
         @NotBlank
