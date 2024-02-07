@@ -40,26 +40,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.TesteCalculo.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/nadyn/Desktop/github/Java/patterns",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/nadyn/Desktop/github/Java/patterns/src/main/java/br/com/nadyne/produtos/Main.java",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.TesteCalculo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nadyn/Desktop/github/Java/patterns&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/nadyn/Desktop/github/Java/patterns/src/main/java/br/com/nadyne/produtos/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nadyn\Desktop\github\Java\patterns\src\main\java\br\com\nadyne\patterns\view" />
@@ -91,6 +91,17 @@
       <workItem from="1707007189681" duration="92000" />
       <workItem from="1707007341960" duration="285000" />
       <workItem from="1707007673932" duration="99000" />
+      <workItem from="1707008662470" duration="72000" />
+      <workItem from="1707008742956" duration="2000" />
+      <workItem from="1707008774157" duration="22000" />
+      <workItem from="1707008808428" duration="39000" />
+      <workItem from="1707008861103" duration="31000" />
+      <workItem from="1707008951073" duration="12000" />
+      <workItem from="1707009050232" duration="26000" />
+      <workItem from="1707009120050" duration="28000" />
+      <workItem from="1707009157061" duration="36000" />
+      <workItem from="1707009197594" duration="1483000" />
+      <workItem from="1707262480653" duration="2184000" />
     </task>
     <task id="LOCAL-00001" summary="Criacao de projeto utilizando design patterns e frameworks">
       <option name="closed" value="true" />

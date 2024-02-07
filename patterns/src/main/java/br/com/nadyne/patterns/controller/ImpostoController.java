@@ -7,7 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 // ImpostoController implementa ActionListener para capturar
-// o evento do botão da View
+// o evento do botão da View.
+//Calma vou traduzir
+//Vamos do inicio Volta na pasta main.
 public class ImpostoController implements ActionListener {
 
     // O Controller possui referências a Imposto e a Tela

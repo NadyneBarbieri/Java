@@ -11,9 +11,9 @@ import java.awt.event.WindowEvent;
 import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JOptionPane;
-
+//Aqui é aquela mesma logica que usamos no Pis.
 public class CalculaPis implements Observer, TelaDeImposto {
-
+    // aqui ja entra dados privados que so pode ser acesssado por metodos contrutores get e set.
     private TextField txtValorFaturado;
     private Button btnCalcular;
 
