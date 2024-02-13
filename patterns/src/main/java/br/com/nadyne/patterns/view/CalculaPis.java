@@ -11,6 +11,7 @@ import java.awt.event.WindowEvent;
 import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JOptionPane;
+
 //Aqui é aquela mesma logica que usamos no Pis.
 public class CalculaPis implements Observer, TelaDeImposto {
     // aqui ja entra dados privados que so pode ser acesssado por metodos contrutores get e set.
@@ -24,6 +25,8 @@ public class CalculaPis implements Observer, TelaDeImposto {
         // O Frame é uma subclasse de Window que estende Container
         // Essa hierarquia de classes utiliza o padrão Composite
         // para compor a tela, veja os métodos .add
+        //traduzindo frame é aquela tela que aparece quando voce roda o sistema.
+        //Entao quando a gente chama essa variavel Frame que está amerzenando o frame
         Frame frame =
                 new Frame("Cálculo do PIS MVC e Design Patterns");
         frame.add("North", new Label("Valor Faturado"));
