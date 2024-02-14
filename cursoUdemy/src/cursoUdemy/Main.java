@@ -21,7 +21,10 @@ public class Main {
 		double price1 = 2100.0;
 		double price2 = 650.50;
 		double measure = 53.234567;
-		
+		// caso de soma de inteiros 
+		int a = 5;
+		int b = 2;
+		double resultado;
 		//com ln no final quebra uma linha
 		System.out.println(x);
 		//com f no final formata e os "%.2f%n" diz com quantas casas depois da virgula
@@ -49,7 +52,9 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		System.out.printf("Rouded (three decimal places): %.3f %n ",measure);
 		
-		
+		// caso de resultado de soma de inteiros 
+		resultado = (double)a/b;
+		System.out.println(resultado);
 
 	} 
 
