@@ -1,10 +1,22 @@
 package cursoUdemy;
 
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
+		// aula 25
+		Scanner sc = new Scanner(System.in);
+		String scan;
+		int numero;
+		double numPonto ;
+		char primeiraLetra;
+		scan = sc.next();
+		numero = sc.nextInt();
+		numPonto = sc.nextDouble();
+		primeiraLetra  = sc.next().charAt(0);
+		
 		// formatacões
 		double x = 10.35784;
 		String nome = "Nadyne";
@@ -52,10 +64,17 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		System.out.printf("Rouded (three decimal places): %.3f %n ",measure);
 		
-		// caso de resultado de soma de inteiros 
+		// caso de resultado de soma de inteiros cast
 		resultado = (double)a/b;
 		System.out.println(resultado);
-
-	} 
+		// aula 25
+		System.out.println("Você digitou: " + scan);
+		System.out.println("Você digitou: " + numero);
+		System.out.printf("Você digitou: %.2f%n", numPonto);
+		System.out.println("Você digitou:"+ primeiraLetra );
+		sc. close();
+		
+		
+	}
 
 }
