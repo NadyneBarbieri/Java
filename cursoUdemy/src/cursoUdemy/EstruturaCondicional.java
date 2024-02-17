@@ -46,14 +46,44 @@ public class EstruturaCondicional {
 //			break;
 //	}
 //		System.out.println("Dia da semana " + dia);
-		
+
 		// expressao condicional ternaria
-		
-		double preco = sc.nextDouble();
-		double desconto = (preco < 20.0)? preco * 0.1 : preco * 0.05;
-		System.out.println(desconto);
-		sc.close();
-		
-	}
+
+//		double preco = sc.nextDouble();
+//		double desconto = (preco < 20.0)? preco * 0.1 : preco * 0.05;
+//		System.out.println(desconto);
+
+		// estutura while
+//		int senha = sc.nextInt();
+//
+//		while (senha != 2002) {
+//			System.out.println("Senha Invalida");
+//			senha = sc.nextInt();
+//		}
+//
+//		System.out.println("Acesso Permitido");
+
+		// estrutura for
+//		int x = sc.nextInt();
+//
+//		for (int i = 1; i <= x; i++) {
+//			if (i % 2 != 0) {
+//				System.out.println(i);
+//			}
+//		}
+//		char resp;
+//	do {
+//		System.out.println("Digite a temperatura em celsius: ");
+//		double C = sc.nextDouble();
+//		double F = sc.nextDouble();
+//		System.out.printf("Equilavente em Fahrenheit: %.1f%n", F);
+//		System.out.println("Deseja repetir (s/n)");
+//		resp = sc.next().charAt(0);
+//		
+//	}while(resp != 'n');
+//		
+//		sc.close();
+//
+//	}
 
 }
