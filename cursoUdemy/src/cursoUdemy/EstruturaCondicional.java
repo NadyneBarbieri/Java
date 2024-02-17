@@ -71,19 +71,19 @@ public class EstruturaCondicional {
 //				System.out.println(i);
 //			}
 //		}
-//		char resp;
-//	do {
-//		System.out.println("Digite a temperatura em celsius: ");
-//		double C = sc.nextDouble();
-//		double F = sc.nextDouble();
-//		System.out.printf("Equilavente em Fahrenheit: %.1f%n", F);
-//		System.out.println("Deseja repetir (s/n)");
-//		resp = sc.next().charAt(0);
-//		
-//	}while(resp != 'n');
-//		
-//		sc.close();
-//
-//	}
+		char resp;
+	do {
+		System.out.println("Digite a temperatura em celsius: ");
+		double C = sc.nextDouble();
+		double F = sc.nextDouble();
+		System.out.printf("Equilavente em Fahrenheit: %.1f%n", F);
+		System.out.println("Deseja repetir (s/n)");
+		resp = sc.next().charAt(0);
+		
+	}while(resp != 'n');
+		
+		sc.close();
+
+	}
 
 }
