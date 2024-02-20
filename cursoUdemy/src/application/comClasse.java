@@ -10,7 +10,7 @@ public class comClasse {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		//classe do entities
+		//classe do Product
 		Triangle x, y;
 		//instaciou a classe
 		x = new Triangle();
@@ -24,7 +24,6 @@ public class comClasse {
 		y.a = sc.nextDouble();
 		y.b = sc.nextDouble();
 		y.c = sc.nextDouble();
-		
 		
 		double areaX = x.area();
 		double areaY = y.area();
