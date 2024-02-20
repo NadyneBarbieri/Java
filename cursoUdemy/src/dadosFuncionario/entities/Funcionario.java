@@ -9,8 +9,7 @@ public class Funcionario {
 		return salario - taxa;
 	}
 	public void Aumento(double percentualAumento) {
-        double aumento = salario * (percentualAumento / 100);
-        salario += aumento;
+		salario += salario * percentualAumento / 100.0;
     }
 	public String toString() { 
 		return nome 
