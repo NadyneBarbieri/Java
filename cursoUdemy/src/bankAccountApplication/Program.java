@@ -40,10 +40,9 @@ public class Program {
 		System.out.println();
 		System.out.print("Enter a withdraw value: ");
 		double withdrawValue = sc.nextDouble();
-		account.deposit(withdrawValue);
+		account.withdraw(withdrawValue);
 		System.out.print("Update account data: ");
 		System.out.println(account);
-		
 		
 		sc.close();
 	}
