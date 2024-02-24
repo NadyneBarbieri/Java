@@ -14,7 +14,6 @@ public class Alturas {
 		for(int n=0; n < x; n++) {
 			vect[n]= sc.nextDouble();
 		}
-		
 		System.out.println(vect);
 		sc.close();
 	}
