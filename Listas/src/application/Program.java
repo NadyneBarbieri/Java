@@ -46,7 +46,7 @@ public static void main(String[] args) {
 		int idsalary = sc.nextInt();
 
 		//Integer pos = position(list, idsalary);
-		
+	
 		Employee emp = list.stream().filter(x -> x.getId() == idsalary).findFirst().orElse(null);
 		
 		 //if (pos == null) {
