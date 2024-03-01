@@ -31,7 +31,6 @@ public class Program {
 					count++;
 				}
 			}
-
 		}
 		
 		System.out.println("Negative numbers: "+ count);
