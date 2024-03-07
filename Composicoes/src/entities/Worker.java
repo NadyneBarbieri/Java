@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import entities.enums.WorkLevel;
+import entities.enums.WorkerLevel;
 
 public class Worker {
 	
 	private String name;
-	private WorkLevel level;
+	private WorkerLevel level;
 	private Double baseSalary;
 	
 	private Department department;
@@ -17,7 +17,7 @@ public class Worker {
 	
 	public Worker(){}
 	
-	public Worker(String name, WorkLevel level, Double baseSalary, Department department) {
+	public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
 		this.name = name;
 		this.level = level;
 		this.baseSalary = baseSalary;
@@ -32,11 +32,11 @@ public class Worker {
 		this.name = name;
 	}
 
-	public WorkLevel getLevel() {
+	public WorkerLevel getLevel() {
 		return level;
 	}
 
-	public void setLevel(WorkLevel level) {
+	public void setLevel(WorkerLevel level) {
 		this.level = level;
 	}
 
