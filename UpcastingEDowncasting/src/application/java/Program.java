@@ -20,7 +20,6 @@ public class Program {
 		acc4.loan(100.0);
 		
 		// BusinessAccount acc5 = (BusinessAccount)acc3; nao da certo
-		
 		if (acc3 instanceof BusinessAccount) {
 			BusinessAccount acc5 = (BusinessAccount)acc3;
 			acc5.loan(200.0);
@@ -34,5 +33,4 @@ public class Program {
 		}
 	}
 	
-
 }
