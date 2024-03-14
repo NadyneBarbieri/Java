@@ -1,20 +1,20 @@
 package entities;
 
-public abstract  class TaxPayer {
-	private String nome;
+public abstract class TaxPayer {
+	private String Name;
 	private Double AnualIncome;
 	
 	public TaxPayer() {}
 	
-	public TaxPayer(String nome, Double anualIncome) {
-		this.nome = nome;
+	public TaxPayer(String Name, Double anualIncome) {
+		this.Name = Name;
 		AnualIncome = anualIncome;
 	}
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return Name;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String Name) {
+		this.Name = Name;
 	}
 	public Double getAnualIncome() {
 		return AnualIncome;
