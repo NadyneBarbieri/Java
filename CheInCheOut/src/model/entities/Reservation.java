@@ -57,12 +57,10 @@ public class Reservation {
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
 	}
-
 	@Override
 	public String toString() {
 		return "Romm: " + roomNumber + ", checkIn: " + sdf.format(checkIn) + ", checkOut: " + sdf.format(checkOut) + " "
 				+ duration() + " nights";
-
 	}
 
 }

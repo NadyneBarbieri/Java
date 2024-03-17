@@ -40,6 +40,7 @@ public class Program {
 		} catch (DomainExceptions e) {
 			System.out.println("Error in reservation: " + e.getMessage());
 		}
+		
 		sc.close();
 	}
 
