@@ -3,18 +3,17 @@ package entities;
 import Exeptions.BusinessException;
 
 public class Account {
+	private Integer number;
 	private String holder;
 	private Double balance;
 	private Double withdrawLimit;
-	private Integer number;
 	
-	public Account(String holder, Double balance, Double withdrawLimit, Integer number) {
+	public Account(Integer number, String holder, Double balance, Double withdrawLimit) {
+		this.number = number;
 		this.holder = holder;
 		this.balance = balance;
 		this.withdrawLimit = withdrawLimit;
-		this.number = number;
 	}
-	
 	public String getHolder() {
 		return holder;
 	}
@@ -49,12 +48,12 @@ public class Account {
 		balance += amount;
 	}
 	
-	public void withdraw(double amount) {
+	public void withdraw(double amount) throws BusinessException {
 		validateWithdraw(amount);
 		balance -= amount;
 	}
 	
-	private void validateWithdraw(double amount) {
+	private void validateWithdraw(double amount) throws BusinessException {
 		if (amount > getWithdrawLimit()) {
 			throw new BusinessException("Erro de saque: A quantia excede o limite de saque");
 		} 
