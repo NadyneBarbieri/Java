@@ -11,7 +11,7 @@ public class Board {
 		}
 		this.rows = rows;
 		this.columns = columns;
-		pieces = new Piece[columns][rows];
+		pieces = new Piece[rows][columns];
 	}
 
 	public int getRows() {
@@ -22,11 +22,11 @@ public class Board {
 		return columns;
 	}
 
-	public Piece piece( int column, int row) {
-		if (!positionExists(column, row)) {
+	public Piece piece(int row , int column) {
+		if (!positionExists(row,column)) {
 			throw new BoardException("Position not on the board");
 		}
-		return pieces[column][row];
+		return pieces[row][column];
 	}
 
 	public Piece piece(Position position) {
