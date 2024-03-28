@@ -1,8 +1,7 @@
 package application;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.File;
+import java.util.Scanner;
 
 public class Program {
 
@@ -50,8 +49,9 @@ public class Program {
 		 * while (line != null) { System.out.println(line); line = br.readLine(); } }
 		 * catch (IOException e) { System.out.println("Error: " + e.getMessage()); }
 		 */
-
-		String[] lines = new String[] { "Você é inteligente", "Você é linda ", "Você vai conseguir" };
+		
+		//escrever Arquivos 
+		/*String[] lines = new String[] { "Você é inteligente", "Você é linda ", "Você vai conseguir" };
 		
 		String path = "c:\\temp\\out.txt"; 
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
@@ -61,7 +61,31 @@ public class Program {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
+		//listando pastas 
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter a folder path: ");
+		String strPath = sc.nextLine();
+		
+		File path = new File(strPath);
+		
+		File[] folders = path.listFiles(File::isDirectory);
+		System.out.println("Folders: ");
+		for(File folder: folders) {
+			System.out.println(folder);
+		}
+		//listando arquivos
+		File[] files = path.listFiles(File::isFile);
+		System.out.println("Files");
+		for(File file : files ) {
+			System.out.println(file);
+		}
+		
+		boolean success = new File(strPath + "\\subdir").mkdir();
+		System.out.println("Diretory created successfully: "+ success);
+		
+		sc.close();
 	}
 
 }
