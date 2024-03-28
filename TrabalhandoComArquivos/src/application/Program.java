@@ -63,7 +63,7 @@ public class Program {
             e.printStackTrace();
         }*/
 		//listando pastas 
-		Scanner sc = new Scanner(System.in);
+		/*Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter a folder path: ");
 		String strPath = sc.nextLine();
@@ -81,9 +81,24 @@ public class Program {
 		for(File file : files ) {
 			System.out.println(file);
 		}
-		
+		//criando pastas 
 		boolean success = new File(strPath + "\\subdir").mkdir();
 		System.out.println("Diretory created successfully: "+ success);
+		
+		sc.close();
+		*/
+		//informaçoes do caminho do arquivo
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter a file path: ");
+		String strPath = sc.nextLine();
+		
+		File path = new File(strPath);
+		
+		System.out.println("getName: " + path.getName());
+		System.out.println("getParent: " + path.getParent());
+		System.out.println("getPath: " + path.getPath());
+		System.out.println("getPath: " + path.getAbsolutePath());
 		
 		sc.close();
 	}
