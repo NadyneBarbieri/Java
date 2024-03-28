@@ -25,8 +25,9 @@ public class Program {
 			
 		}*/
 		
-		//outra forma de ler arquivos
-		String path = "c:\\temp\\in.txt.txt";
+		//segunda forma de ler arquivos
+		
+	/*	String path = "c:\\temp\\in.txt.txt";
 		FileReader fr = null;
 		BufferedReader br = null;
 
@@ -55,8 +56,25 @@ public class Program {
 				e.printStackTrace();
 			}
 
-		}
+		}*/
+		
+		//terceira forma de ler arquivos
+			String path = "c:\\temp\\in.txt.txt";
+		
 
+		try(BufferedReader br = new BufferedReader(new FileReader(path))) {
+	
+			String line = br.readLine();
+
+			while (line != null) {
+				System.out.println(line);
+				line = br.readLine();
+			}
+		} catch (IOException e) {
+			System.out.println("Error: " + e.getMessage());
+		} 
+		
+		
 	}
 
 }
