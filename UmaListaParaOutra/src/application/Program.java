@@ -25,6 +25,7 @@ public class Program {
 		for (Object obj : list) {
 			System.out.print(obj + " ");
 		}
+		
 		System.out.println();
 	}
 }
