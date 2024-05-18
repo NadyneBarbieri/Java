@@ -27,10 +27,18 @@ public class Product implements Comparable<Product> {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
+	public static boolean staticProductPredicate(Product p) {
+		return p.getPrice() >= 100.0;
+	}
+	
+	public boolean nonstaticProductPredicate() {
+		return price >= 100.0;
+	}
 
 	@Override
 	public String toString() {
-		return "Product [name= " + name + ", price= " + price + "]";
+		return "Product name = " + name + ", price = " + price ;
 	}
 	
 	public int compareTo(Product p) {
